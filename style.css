@@ -112,6 +112,7 @@ figure:hover img{
 	text-align: center;
 	padding-top: 2%;
 	float: left;
+	display: inline;
 }
 .bigLeftSubtitle {
 	margin-top: -2%;
@@ -131,7 +132,7 @@ figure:hover img{
 	float: right;
 	background-color: #666666;
 	color: white;
-	display: block;
+	display: inline;
 	margin-bottom: 3%;
 	margin-right: 3%;
 }
