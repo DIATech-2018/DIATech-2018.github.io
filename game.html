@@ -1,86 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-<link rel="icon" href="Images/icon.ico"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Impact" rel='stylesheet'>
 </head>
-<body>
-<!-- Tabs -->
-<div class="tab">
-  <button onclick="changeTab('upgrades')" id="defaultOpen">Upgrades</button>
-  <button onclick="changeTab('broker')">Broker</button>
-  <button onclick="changeTab('wallet')">Wallet</button>
-  <button onclick="changeTab('btc')">Mine BTC</button>
-  <button onclick="changeTab('eth')">Mine ETH</button>
-  <button onclick="changeTab('xmr')">Mine XMR</button>
-  <button onclick="changeTab('leisure')">Leisure</button>
-<div id="upgrades" class="tabcontent">
-<hr>
-  <h3>Dubai Mall</h3>
-  <a href="dubaimall.html"><img src="Images\dubai-mall-outside.png"></a>
-  <p>Dubai Mall is the biggest shopping mall in the world by total area, if you're a shopaholic you'll find Dubai Mall to be shopping heaven!
-  The Dubai Mall is located at the foot of the Burj Khalifa and stretches a total of 1.1 million square meters! It has something for everyone!
-  There is entertainment, leisure, shopping, eating, and so much more! With over 1,200 retail outlets, waterfalls, the Dubai Aquarium, theme parks 
-  (yes, inside a mall) and its own ice rink (again yes, inside a mall!). It's impossible to have nothing to do!</p>
-</div>
-<div id="broker" class="tabcontent">
-<hr>
-  <h3>Mall of The Emirates</h3>
-  <a href="moe.html"><img src="Images\Mall-of-the-Emirates-Outside.jpg"></a>
-  <p>The Mall of The Emirates isn't the biggest mall, but don't let that get your hopes down - it's still MASSIVE! Boasting an entire indoor ski slope
-  called "Ski Dubai", that is the first snow park and ski resort in the Middle East! It also contains a 14 screen VOX multiplex, a Magic Planet family entertainment area,
-  the largest carrefour in Dubai and much, much more...</p>
-</div>
-<div id="wallet" class="tabcontent">
-<hr>
-  <h3>Indian Restaurant</h3>
-  <a href="indian.html"><img src="Images\Indian-Restaurant.jpg"></a>
-  <p>Dubai has a rich history thanks to the large number immigrants, thanks to this Dubai has a range of great and authentic Indian Restaurants to choose from.
-  Take your pick from a variety of Indian restaurants all throughout Dubai, there may even be a few right next to you!</p>
-</div>
-<div id="btc" class="tabcontent">
-<hr>
-  <h3>Italian Restaurant</h3>
-  <a href="italian.html"><img src="Images\Italian-Restaurant.jpeg"></a>
-  <p>When Italian immigrants first came to Dubai it was said that they were outraged that there was no authentic Italian pizza and pasta, luckily for you, by now there are
-  hundreds scattered all around Dubai! If you know where to look you can get the best pizza you've ever tasted (it will take you right back to Italy!)... or you can just
-  find them using our services!</p>
-</div>
-<div id="eth" class="tabcontent">
-<hr>
-  <h3>Chinese Restaurant</h3>
-  <a href="chinese.html"><img src="Images\Chinese-Restaurant.jpg"></a>
-  <p>Chinese restaurants are a favourite amongst everyone, especially in Dubai, with restaurants everywhere it can be hard to find one that is tasty and right for you! 
-  With our service you can not only easily locate a restaurant close to you, but also sift through reviews from other users to find the best quality food possible!
-</p>
-</div>
-<div id="xmr" class="tabcontent">
-<hr>
-  <h3>Badminton</h3>
-  <a href="badminton.html"><img src="Images\Badminton-Background.jpg"></a>
-  <p>With all the food available in Dubai it's easy to get carried away, so why not take a break and burn some calories whilst having some fun with the great sports available in Dubai!
-  I'm talking about badminton! there are plenty of courts all around Dubai, some of them are even free to use whenever you want! no need to waste time or money, whenever you want to 
-  play a quick game or even an impromptu tournament between friends, just look it up at DEEA - we've got you covered!
-</p>
-</div>
-<div id="leisure" class="tabcontent">
-<hr>
-  <h3>Tennis</h3>
-  <a href="tennis.html"><img src="Images\Tennis-Background.jpg"></a>
-  <p>Tennis is another one of the great sports available to try out in dubai, potentially for free! We can recommend the best facilities from battle tested reviewers across Dubai!
-  Our team will point you in the right direction to give you the best experience you can possibly have whilst in Dubai!
-</p>
-</div>
-</div>
-<!-- -->
-<center>
-<h1 id="maintitle"> <span id="currency"> Cryptocurrency </span> Miner </h1>
-</center>
-<table id="quadriceps">
-<tr> <td> <img id=”pic1” src=”images/plus.png”> </img> </td> <td><img id=”pic2”> </img> </td> <td> <img id=”pic3”> </img> </td> <td> <img id=”pic4”> </img> </td> <td> <img id=”pic5”> </img> </td> </tr>
-</table>
-
+<body onload="showcash()">
+	<div class="tab">
+		<center>
+			<button onclick="changeTab('upgrades')">Upgrades</button>
+			<button onclick="changeTab('broker')">Broker</button>
+			<button onclick="changeTab('wallet')">Wallet</button>
+			<button onclick="changeTab('btc')">Mine BTC</button>
+			<button onclick="changeTab('eth')">Mine ETH</button>
+			<button onclick="changeTab('xmr')">Mine XMR</button>
+			<button onclick="changeTab('leisure')">Leisure</button>
+		</center>
+	</div> <br/> <br/> <br/> <br/>
+	<center> 
+		<span id="cash" class="smalltext"> </span> 
+	</center>
+	<div id="upgrades" class="tabcontent">
+		<h1 class="maintitle"> Upgrades </h1>
+	</div>
+	<div id="broker" class="tabcontent">
+		<h1 class="maintitle"> Brokers </h1>
+    </div>
+    <div id="wallet" class="tabcontent">
+		<h1 class="maintitle"> Wallet </h1>
+    </div>
+    <div id="btc" class="tabcontent">
+      <h1 class="maintitle"> Bitcoin Miner </h1>
+        <table id="bitcointable">
+            <tr>
+				<td> 
+					<center>
+						<div id="bitpic1" onclick="buybitcoinminer(1)"> <!-- The div in which the first picture will go -->
+							<br/> <br/> <br/> <br/> <br/> <!-- Spaces so that the price appears in the middle of the picture of the plus sign -->
+							<span id="bit1price" class="smalltext"> $800 </span> <!-- The price --> 
+						</div> <!-- Closing the div for the first picture -->
+						<span id="bitminer1persec" class="smalltext"> </span> <!-- In this span, the speed of the first bitcoin miner will appear -->
+						<br/> <!-- A gap. -->
+						<span id="bitminer1numberofbtc" class="smalltext"> </span> <!-- Over here, the number of bitcoins mined by the first computer will appear -->
+						<br/> <br/> <br/> <!-- Some gaps. -->
+						<button id="miner1collectbitcoins" onclick="collectbitcoin(1)"> Collect Bitcoin </button> 
+					</center> 
+				</td> <!-- This button, when clicked, will transfer the amount of bitcoin mined by the computer into the wallet -->
+				<td> 
+					<center> 
+						<div id="bitpic2" onclick="buybitcoinminer(2)"> 
+							<br/> <br/> <br/> <br/> <br/> <span id="bit2price" class="smalltext"> $800 </span>
+						</div> 
+						<span id="bitminer2persec" class="smalltext"></span> <br/> 
+						<span id="bitminer2numberofbtc" class="smalltext"></span> <br/> <br/> <br/> 
+						<button id="miner2collectbitcoins" onclick="collectbitcoin(2)"> Collect Bitcoin </button> 
+					</center>
+				</td>
+				<td> 
+					<center> 
+						<div id="bitpic3" onclick="buybitcoinminer(3)">
+							<br/> <br/> <br/> <br/> <br/> <span id="bit3price" class="smalltext"> $800 </span> 
+						</div> 
+						<span id="bitminer3persec" class="smalltext"></span> <br/> 
+						<span id="bitminer3numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> 
+						<button id="miner3collectbitcoins" onclick="collectbitcoin(3)"> Collect Bitcoin </button> 
+					</center>
+				</td>
+				<td> 
+					<center> 
+						<div id="bitpic4" onclick="buybitcoinminer(4)"> 
+							<br/> <br/> <br/> <br/> <br/> <span id="bit4price" class="smalltext"> $800 </span> 
+						</div> 
+						<span id="bitminer4persec" class="smalltext"> </span> <br/> 
+						<span id="bitminer4numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> 
+						<button id="miner4collectbitcoins" onclick="collectbitcoin(4)"> Collect Bitcoin </button> 
+					</center>
+				</td>
+				<td> 
+					<center> 
+						<div id="bitpic5" onclick="buybitcoinminer(5)"> 
+							<br/> <br/> <br/> <br/> <br/> <span id="bit5price" class="smalltext"> $800 </span> 
+						</div> 
+						<span id="bitminer5persec" class="smalltext"> </span><br/> 
+						<span id="bitminer5numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> 
+						<button id="miner5collectbitcoins" onclick="collectbitcoin(5)"> Collect Bitcoin </button> 
+					</center> 
+				</td>
+            </tr>
+        </table>
+			<center> 
+				<span class="smalltext"> Trade Bitcoin! </span> <br/> <br/>
+				<input type="number" id="bitcointraded" placeholder="How much bitcoin?"> 
+			</center> <br/>
+            <button onclick="buy()"> Buy </button> 
+			<button onclick="sell()"> Sell </button> <br/> <br/>
+          <span id="bitcoinprice" class="smalltext"> </span> <br/> <br/>
+          <span id="bitcoinsinwallet" class="smalltext"> Bitcoins in wallet: 0</span> 
+    </div>
+    <div id="eth" class="tabcontent">
+      <h1 class="maintitle"> Eutherium Miner </h1>
+    </div>
+    <div id="xmr" class="tabcontent">
+      <h1 class="maintitle"> Monero Miner </h1>
+    </div>
+    <div id="leisure" class="tabcontent">
+      <h1 class="maintitle"> Leisure </h1>
+    </div>	
 <script language="javascript" src="script.js"></script>
 </body>
 </html>
