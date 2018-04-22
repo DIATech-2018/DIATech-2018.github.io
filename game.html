@@ -8,87 +8,64 @@
 <body onload="showcash()">
 	<div class="tab">
 		<center>
-			<button onclick="changeTab('upgrades')">Upgrades</button>
-			<button onclick="changeTab('broker')">Broker</button>
-			<button onclick="changeTab('wallet')">Wallet</button>
-			<button onclick="changeTab('btc')">Mine BTC</button>
-			<button onclick="changeTab('eth')">Mine ETH</button>
-			<button onclick="changeTab('xmr')">Mine XMR</button>
-			<button onclick="changeTab('leisure')">Leisure</button>
-		</center>
-	</div> <br/> <br/> <br/> <br/>
-	<center> 
-		<span id="cash" class="smalltext"> </span> 
-	</center>
+
+  		<button onclick="changeTab('upgrades')">Upgrades</button>
+  		<button onclick="changeTab('broker')">Broker</button>
+  		<button onclick="changeTab('wallet')">Wallet</button>
+  		<button onclick="changeTab('btc')">Mine BTC</button>
+  		<button onclick="changeTab('eth')">Mine ETH</button>
+  		<button onclick="changeTab('xmr')">Mine XMR</button>
+  		<button onclick="changeTab('leisure')">Leisure</button>
+  	</center>
+
+	</div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+  <center> <span id="cash" class="smalltext"> </span> <!-- This will show the amount of cash. I have made it separate from the divs for obvious reasons -->
+
 	<div id="upgrades" class="tabcontent">
-		<h1 class="maintitle"> Upgrades </h1>
+    <h1 class="maintitle"> Upgrades </h1>
 	</div>
 	<div id="broker" class="tabcontent">
-		<h1 class="maintitle"> Brokers </h1>
+    <h1 class="maintitle"> Brokers </h1>
     </div>
     <div id="wallet" class="tabcontent">
-		<h1 class="maintitle"> Wallet </h1>
+      <h1 class="maintitle"> Wallet </h1>
     </div>
     <div id="btc" class="tabcontent">
       <h1 class="maintitle"> Bitcoin Miner </h1>
-        <table id="bitcointable">
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <table id="bitcointable">
             <tr>
-				<td> 
-					<center>
-						<div id="bitpic1" onclick="buybitcoinminer(1)"> <!-- The div in which the first picture will go -->
-							<br/> <br/> <br/> <br/> <br/> <!-- Spaces so that the price appears in the middle of the picture of the plus sign -->
-							<span id="bit1price" class="smalltext"> $800 </span> <!-- The price --> 
-						</div> <!-- Closing the div for the first picture -->
-						<span id="bitminer1persec" class="smalltext"> </span> <!-- In this span, the speed of the first bitcoin miner will appear -->
-						<br/> <!-- A gap. -->
-						<span id="bitminer1numberofbtc" class="smalltext"> </span> <!-- Over here, the number of bitcoins mined by the first computer will appear -->
-						<br/> <br/> <br/> <!-- Some gaps. -->
-						<button id="miner1collectbitcoins" onclick="collectbitcoin(1)"> Collect Bitcoin </button> 
-					</center> 
-				</td> <!-- This button, when clicked, will transfer the amount of bitcoin mined by the computer into the wallet -->
-				<td> 
-					<center> 
-						<div id="bitpic2" onclick="buybitcoinminer(2)"> 
-							<br/> <br/> <br/> <br/> <br/> <span id="bit2price" class="smalltext"> $800 </span>
-						</div> 
-						<span id="bitminer2persec" class="smalltext"></span> <br/> 
-						<span id="bitminer2numberofbtc" class="smalltext"></span> <br/> <br/> <br/> 
-						<button id="miner2collectbitcoins" onclick="collectbitcoin(2)"> Collect Bitcoin </button> 
-					</center>
-				</td>
-				<td> 
-					<center> 
-						<div id="bitpic3" onclick="buybitcoinminer(3)">
-							<br/> <br/> <br/> <br/> <br/> <span id="bit3price" class="smalltext"> $800 </span> 
-						</div> 
-						<span id="bitminer3persec" class="smalltext"></span> <br/> 
-						<span id="bitminer3numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> 
-						<button id="miner3collectbitcoins" onclick="collectbitcoin(3)"> Collect Bitcoin </button> 
-					</center>
-				</td>
-				<td> 
-					<center> 
-						<div id="bitpic4" onclick="buybitcoinminer(4)"> 
-							<br/> <br/> <br/> <br/> <br/> <span id="bit4price" class="smalltext"> $800 </span> 
-						</div> 
-						<span id="bitminer4persec" class="smalltext"> </span> <br/> 
-						<span id="bitminer4numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> 
-						<button id="miner4collectbitcoins" onclick="collectbitcoin(4)"> Collect Bitcoin </button> 
-					</center>
-				</td>
-				<td> 
-					<center> 
-						<div id="bitpic5" onclick="buybitcoinminer(5)"> 
-							<br/> <br/> <br/> <br/> <br/> <span id="bit5price" class="smalltext"> $800 </span> 
-						</div> 
-						<span id="bitminer5persec" class="smalltext"> </span><br/> 
-						<span id="bitminer5numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> 
-						<button id="miner5collectbitcoins" onclick="collectbitcoin(5)"> Collect Bitcoin </button> 
-					</center> 
-				</td>
+
+              <td> 
+                <center>
+                 <div id="bitpic1" onclick="buybitcoinminer(1)"> <!-- The div in which the first picture will go -->
+                  <br/> <br/> <br/> <br/> <br/> <!-- Spaces so that the price appears in the middle of the picture of the plus sign -->
+                  <span id="bit1price" class="smalltext"> $800 </span> <!-- The price --> 
+                </div> <!-- Closing the div for the first picture -->
+                <span id="bitminer1persec" class="smalltext"> </span> <!-- In this span, the speed of the first bitcoin miner will appear -->
+                <br/> <!-- A gap. -->
+                <span id="bitminer1numberofbtc" class="smalltext"> </span> <!-- Over here, the number of bitcoins mined by the first computer will appear -->
+                <br/> <br/> <br/> <!-- Some gaps. -->
+                <button id="miner1collectbitcoins" onclick="collectbitcoin(1)"> Collect Bitcoin </button> </center> </td> <!-- This button, when clicked, will transfer the amount of bitcoin mined by the computer into the wallet -->
+
+              <td> <center> <div id="bitpic2" onclick="buybitcoinminer(2)"> <br/> <br/> <br/> <br/> <br/> <span id="bit2price" class="smalltext"> $800 </span></div> <span id="bitminer2persec" class="smalltext"></span> <br/> <span id="bitminer2numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> <button id="miner2collectbitcoins" onclick="collectbitcoin(2)"> Collect Bitcoin </button> </center></td>
+
+              <td> <center> <div id="bitpic3" onclick="buybitcoinminer(3)"> <br/> <br/> <br/> <br/> <br/> <span id="bit3price" class="smalltext"> $800 </span> </div> <span id="bitminer3persec" class="smalltext"></span> <br/> <span id="bitminer3numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> <button id="miner3collectbitcoins" onclick="collectbitcoin(3)"> Collect Bitcoin </button> </center></td>
+
+              <td> <center> <div id="bitpic4" onclick="buybitcoinminer(4)"> <br/> <br/> <br/> <br/> <br/> <span id="bit4price" class="smalltext"> $800 </span> </div> <span id="bitminer4persec" class="smalltext"> </span> <br/> <span id="bitminer4numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> <button id="miner4collectbitcoins" onclick="collectbitcoin(4)"> Collect Bitcoin </button> </center></td>
+
+              <td> <center> <div id="bitpic5" onclick="buybitcoinminer(5)"> <br/> <br/> <br/> <br/> <br/> <span id="bit5price" class="smalltext"> $800 </span> </div> <span id="bitminer5persec" class="smalltext"> </span><br/> <span id="bitminer5numberofbtc" class="smalltext"> </span> <br/> <br/> <br/> <button id="miner5collectbitcoins" onclick="collectbitcoin(5)"> Collect Bitcoin </button> </center> </td>
             </tr>
-        </table>
-			<br/>
+          </table>
+          <br/>
           <br/>
           <center> 
             <span class="smalltext"> Trade Bitcoin! </span>
@@ -105,6 +82,7 @@
           <br/>
           <br/>
           <span id="bitcoinprice" class="smalltext"> </span> 
+          
     </div>
     <div id="eth" class="tabcontent">
       <h1 class="maintitle"> Eutherium Miner </h1>
@@ -115,6 +93,6 @@
     <div id="leisure" class="tabcontent">
       <h1 class="maintitle"> Leisure </h1>
     </div>	
-<script language="javascript" src="script.js"></script>
+   <script language="javascript" src="script.js"></script>
 </body>
 </html>
