@@ -86,7 +86,7 @@ function buybitcoinminer(number)
   case 1:
   if(bitcoinminer1 == false && cash>=800)
   {
-    document.getElementById('bitpic1').style.backgroundImage = "url('images/comp.png')";
+    document.getElementById('bitpic1').style.backgroundImage = "url('Images/comp.png')";
     bitcoinminer1=true;
     document.getElementById('bit1price').innerHTML = "";
     cash=cash-800;
@@ -107,7 +107,7 @@ function buybitcoinminer(number)
   case 2:
   if(bitcoinminer2 == false && cash>=800)
   {
-    document.getElementById('bitpic2').style.backgroundImage = "url('images/comp.png')"; 
+    document.getElementById('bitpic2').style.backgroundImage = "url('Images/comp.png')"; 
     bitcoinminer2=true;
     document.getElementById('bit2price').innerHTML = "";
     cash=cash-800;
@@ -128,7 +128,7 @@ function buybitcoinminer(number)
   case 3:
   if(bitcoinminer3 == false && cash>=800)
   {
-    document.getElementById('bitpic3').style.backgroundImage = "url('images/comp.png')";
+    document.getElementById('bitpic3').style.backgroundImage = "url('Images/comp.png')";
     bitcoinminer3 = true;
     document.getElementById('bit3price').innerHTML = "";
     cash=cash-800;
@@ -149,7 +149,7 @@ function buybitcoinminer(number)
   case 4:
   if(bitcoinminer4 == false && cash>=800)
   {
-    document.getElementById('bitpic4').style.backgroundImage = "url('images/comp.png')";
+    document.getElementById('bitpic4').style.backgroundImage = "url('Images/comp.png')";
     bitcoinminer4 = true;
     document.getElementById('bit4price').innerHTML = "";
     cash=cash-800;
@@ -170,7 +170,7 @@ function buybitcoinminer(number)
   case 5:
   if(bitcoinminer5 == false)
   {
-    document.getElementById('bitpic5').style.backgroundImage = "url('images/comp.png')";
+    document.getElementById('bitpic5').style.backgroundImage = "url('Images/comp.png')";
     bitcoinminer5 = true;
     document.getElementById('bit5price').innerHTML = "";
     cash=cash-800;
