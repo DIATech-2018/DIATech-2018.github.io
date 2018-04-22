@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="gamestyle.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Impact" rel='stylesheet'>
+   <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Impact" rel='stylesheet'>
 </head>
 <body onload="showcash()">
 	<div class="tab">
 		<center>
+
   		<button onclick="changeTab('upgrades')">Upgrades</button>
   		<button onclick="changeTab('broker')">Broker</button>
   		<button onclick="changeTab('wallet')">Wallet</button>
@@ -23,7 +24,7 @@
   <br/>
   <br/>
 
-  <center> <span id="cash" class="smalltext"> </span> <!-- This will show the amount of cash. I have made it separate from the divs for obvious reasons -->
+  <center> <span id="cash" class="smalltext"> Cash:  $1000 </span> <!-- This will show the amount of cash. I have made it separate from the divs for obvious reasons -->
 
 	<div id="upgrades" class="tabcontent">
     <h1 class="maintitle"> Upgrades </h1>
@@ -70,7 +71,7 @@
             <span class="smalltext"> Trade Bitcoin! </span>
             <br/>
             <br/>
-            <input type="number" id="bitcointraded" placeholder="How much bitcoin?">
+            <input type="number" id="bitcointraded" placeholder="How much bitcoin?"> </center>
             <br/>
             <button onclick="buy()" class="thebuttons"> Buy </button> <button onclick="sell()" class="thebuttons"> Sell </button>
           <br/>
@@ -81,7 +82,7 @@
           <br/>
           <br/>
           <span id="bitcoinprice" class="smalltext"> </span> 
-          </center>
+          
     </div>
     <div id="eth" class="tabcontent">
       <h1 class="maintitle"> Eutherium Miner </h1>
