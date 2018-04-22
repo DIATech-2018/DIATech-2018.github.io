@@ -1,0 +1,105 @@
+#bitcointable
+{
+  width:100%;
+  height:200px;
+  border-collapse: collapse;
+  align-content: top; 
+  margin-top:50px;
+
+}
+.maintitle
+{
+color: yellow;
+font-family: righteous,verdana;
+text-align: center;
+}
+body
+{
+  background-color:#333333;
+}
+.tab
+{
+  width: 100%;
+}
+.tabcontent
+{
+  padding-top:20px;
+  height:200px;
+  display:none;
+ 
+}
+.tab button {
+    background-color: inherit;
+    float: left; 
+  border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 1.0s;
+    font-size: 18.8px;
+    width:14.2%;
+}
+.tab button:hover {
+    background-color: #ddd;
+  border: none;
+}
+
+#bitpic1
+{
+  height:200px;
+  width:200px;
+  background-image:url('images/plus.png');
+  background-size:100%;
+  margin-top: -50%;
+}
+#bitpic2
+{
+  height:200px;
+  width:200px;
+  background-image:url('images/plus.png');
+  background-size:100%;
+  margin-top: -50%;
+}
+#bitpic3
+{
+  height:200px;
+  width:200px;
+  background-image:url('images/plus.png');
+  background-size:100%;
+  margin-top: -50%;
+}
+#bitpic4
+{
+  height:200px;
+  width:200px;
+  background-image:url('images/plus.png');
+  background-size:100%;
+  margin-top: -50%;
+}
+#bitpic5
+{
+  height:200px;
+  width:200px;
+  background-image:url('images/plus.png');
+  background-size:100%;
+  margin-top: -50%;
+}
+.smalltext
+{
+  font-family: righteous,verdana;
+  font-size: 20px;
+  color:yellow;
+}
+
+#miner2collectbitcoins, #miner1collectbitcoins, #miner3collectbitcoins, #miner4collectbitcoins, #miner5collectbitcoins
+{
+  display:none; /* This is just so that the buttons don't show before the computer has been bought */
+}
+
+.thebuttons
+{
+  width:60px;
+  height:30px;
+  border-radius:5px;
+  background-color:green;
+}
