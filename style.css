@@ -4,6 +4,7 @@ html {
 body {
 	margin: 0px;
 	background-color:#333333;
+	font-family: "Roboto";
 }
 .navbar {
 	list-style: none;
@@ -16,7 +17,7 @@ body {
 }
 .navbar li {
 	display: inline;
-	padding: 10px 66.99px;
+	padding: 10px 68.5px;
 	overflow: hidden;
 }
 a.nav-item {
@@ -43,7 +44,7 @@ a.nav-item {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: "Impact";
+	font-family: "Ubuntu";
 }
 .breakBar {
 	width: 100%;
@@ -84,6 +85,7 @@ figcaption{
   height: 100%;
   opacity: 0;
   text-transform: uppercase;
+  font-family: "Ubuntu";
 }
 figure img{
   -webkit-transition: all 0.5s linear;
@@ -123,6 +125,9 @@ figure:hover img{
 .bigLeftSubtitle {
 	margin-top: -2%;
 }
+.bigLeftTitle {
+	font-family: "Ubuntu";
+}
 .bigLeftText {
 	margin: 4% 10%;
 }
@@ -151,6 +156,7 @@ figure:hover img{
 .sideSectionHeader {
 	margin: -5% 0%;
 	text-align: center;
+	font-family: "Ubuntu";
 }
 .sideSectionSubtitle {
 	margin: 5% 0%;
@@ -159,6 +165,7 @@ figure:hover img{
 .sideSectionText {
 	margin: 5% 10%;
 	text-align: center;
+	font-family: "Source Sans Pro";
 }
 .goToButton {
 	border-radius: 50px;
@@ -180,9 +187,13 @@ figure:hover img{
 }
 .miniTitle {
 	margin-bottom: 0%;
+	font-family: "Ubuntu";
 }
 .miniSubtitle {
 	margin-top: 0%;
+}
+.miniText {
+	font-family: "Source Sans Pro";
 }
 .miniHR {
 	width: 70%;

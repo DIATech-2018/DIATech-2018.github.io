@@ -22,17 +22,18 @@ body{background-color:#333333;}
 .tab button {
     background-color: inherit;
     float: left; 
-  border: none;
+	border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 1.0s;
+    transition: 0.5s;
     font-size: 18.8px;
     width:14.2%;
+	color: #adadad;
 }
 .tab button:hover {
     background-color: #ddd;
-  border: none;
+	border: none;
 }
 #bitpic1 {
   height:200px;

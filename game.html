@@ -17,9 +17,31 @@
 			<button onclick="changeTab('leisure')">Leisure</button>
 	</div> <br/> <br/> <br/> <br/>
 </center>
-	<center> <span id="cash" class="smalltext"> Cash:  $1000 </span> <!-- This will show the amount of cash. I have made it separate from the divs for obvious reasons -->
+	<center> <span id="cash" class="smalltext"> Cash:  $1000 </span> </center> <!-- This will show the amount of cash. I have made it separate from the divs for obvious reasons -->
 	<div id="upgrades" class="tabcontent">
 		<h1 class="maintitle"> Upgrades </h1>
+		<table class="UpgradesTable">
+			<tr>
+				<th>Buy Upgrade</th>
+				<th>Upgrade Effect</th>
+				<th>Upgrade Cost</th>
+			</tr>
+			<tr id="GPU_Mining">
+				<td><button class="upgrade" onclick="upgrade(GPU_Mining, 1500)">Upgrade</button/></td>
+				<td><h2 class="upgradeDescription">Doubles Miner Speed</h2></td>
+				<td><h2 class="upgradeCost">$1,500</h2></td>
+			</tr>
+			<tr id="GPU_RigMining">
+				<td><button class="upgrade" onclick="upgrade(GPU_RigMining, 5000)">Upgrade</button/></td>
+				<td><h2 class="upgradeDescription">Doubles Miner Speed</h2></td>
+				<td><h2 class="upgradeCost">$5,000</h2></td>
+			</tr>
+			<tr id="ASIC_Mining">
+				<td><button class="upgrade" onclick="upgrade(ASIC_Mining, 30000)">Upgrade</button/></td>
+				<td><h2 class="upgradeDescription">Triples Miner Speed</h2></td>
+				<td><h2 class="upgradeCost">$30,000</h2></td>
+			</tr>
+		</table>			
 	</div>
 	<div id="broker" class="tabcontent">
 		<h1 class="maintitle"> Brokers </h1>
