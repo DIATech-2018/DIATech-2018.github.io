@@ -13,7 +13,7 @@ body {
 	position: fixed;
 	z-index: 100;
 	background-color: #333333;
-	width:100%;
+	width: 100%;
 }
 .navbar li {
 	display: inline;
