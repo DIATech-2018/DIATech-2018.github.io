@@ -21,7 +21,7 @@
   var GPU_RigMining = false;
   var ASIC_Mining = false; */
   
-  var current = "btc";
+  var current = "upgrades";
 
   window.onload= setInterval(randomprice,5000);
   
