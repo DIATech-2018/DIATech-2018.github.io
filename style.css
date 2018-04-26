@@ -86,6 +86,7 @@ figcaption{
   opacity: 0;
   text-transform: uppercase;
   font-family: "Ubuntu";
+  color: black;
 }
 figure img{
   -webkit-transition: all 0.5s linear;
