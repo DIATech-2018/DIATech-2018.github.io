@@ -17,7 +17,7 @@ body {
 }
 .navbar li {
 	display: inline;
-	padding: 10px 70px;
+	padding: 10px 80px;
 	overflow: hidden;
 }
 a.nav-item {
@@ -43,7 +43,7 @@ a.nav-item {
 	font-size: 50px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -75%);
 	font-family: "Ubuntu";
 }
 .breakBar {
