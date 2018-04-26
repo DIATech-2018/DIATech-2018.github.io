@@ -17,11 +17,11 @@
   var bitcoinminer4=false;
   var bitcoinminer5=false; // All of these booleans are basically whether the miner has been bought or not
 
-  var GPU_Mining = false;
+ /* var GPU_Mining = false;
   var GPU_RigMining = false;
-  var ASIC_Mining = false;
+  var ASIC_Mining = false; */
   
-  var current;
+  var current = "btc";
 
   window.onload= setInterval(randomprice,5000);
   
@@ -30,7 +30,7 @@ function changeTab(Id) {
   document.getElementById(Id).style.display = 'block';
   current = Id;
 }
-function upgrade(upgrade, upgradeCost) {
+/* function upgrade(upgrade, upgradeCost) {
 	if upgrade == false; && cash >= upgradeCost {
 		upgrade = true;
 		cash -= upgradeCost;
@@ -38,7 +38,7 @@ function upgrade(upgrade, upgradeCost) {
         showcash();
 	} else {
 		alert("You do not have enough money to purchase this upgrade");
-}}
+}} */
   function collectbitcoin(minernumber) {
     switch(minernumber) {
       case 1:
